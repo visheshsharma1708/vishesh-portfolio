@@ -1,0 +1,293 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #f1f1f1;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Particle Background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #0d0d0d;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: #00e0ff;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00e0ff;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 span {
+  color: #00e0ff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #00e0ff;
+  color: #0d0d0d;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00b8d4;
+  transform: scale(1.05);
+}
+
+/* Section Headings */
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #00e0ff;
+}
+
+/* About */
+#about p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.skills-container div {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00e0ff33;
+  width: 250px;
+}
+
+.skills-container ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.skills-container li {
+  padding: 5px 0;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00e0ff33;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.project-card h3 {
+  color: #00e0ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  display: inline-block;
+  color: #0d0d0d;
+  background: #00e0ff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-card a:hover {
+  background: #00b8d4;
+}
+
+/* Experience */
+.exp-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px #00e0ff33;
+}
+
+.exp-card h3 {
+  color: #00e0ff;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: #666;
+}
+
+footer a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+#typing::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+.exp-card h4 {
+  color: #00b8d4;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.exp-card p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00e0ff66;
+  transition: 0.3s;
+}
+.skills-container div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00e0ff66;
+  transition: 0.3s;
+}
+
+.skills-container h3 {
+  color: #00e0ff;
+  margin-bottom: 15px;
+}
+
+.skills-container li {
+  padding: 5px 0;
+  color: #ccc;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+#lottie-hero {
+  max-width: 400px;
+  max-height: 400px;
+}
