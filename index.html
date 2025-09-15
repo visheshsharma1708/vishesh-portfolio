@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vishesh Sharma | AI & ML Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <!-- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Lottie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-<!-- Particles.js -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<!-- ScrollReveal -->
-<script src="https://unpkg.com/scrollreveal"></script>
-<!-- Lottie -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
 </head>
-<body>
+<body class="light-mode">
+
+  <!-- Dark/Light Mode Toggle -->
+  <button id="theme-toggle">🌙</button>
+
   <!-- 3D Particle Background -->
   <div id="particles-js"></div>
 
@@ -28,70 +30,68 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#blogs">Blogs</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="https://github.com/visheshsharma1708" target="_blank">GitHub</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
-
   <section id="hero">
-  <div class="hero-content">
-    <h1>Vishesh Sharma</h1>
-    <p id="typing"></p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </div>
-  <div id="lottie-hero" style="width: 400px; height: 400px;"></div>
-</section>
-
+    <div class="hero-content">
+      <h1>Vishesh Sharma</h1>
+      <p id="typing">Aspiring AI & ML Engineer | Building Intelligent Systems</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div id="lottie-hero" style="width: 400px; height: 400px;"></div>
+  </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m an aspiring AI Engineer and Machine Learning Developer currently pursuing B.Tech in Artificial Intelligence.
-      I have completed two internships focused on data preprocessing, feature selection, model training, MLflow experiment tracking, Evidently, Deepchecks, and ensemble models like RandomForest, XGBoost, LightGBM, and CatBoost.
-      My goal is to build impactful AI-powered solutions and intelligent systems.
+      I’m an aspiring AI Engineer and Machine Learning Developer pursuing B.Tech in Artificial Intelligence.  
+      Completed internships focusing on data preprocessing, feature selection, model training, MLflow, Evidently, Deepchecks, and ensemble models like RandomForest, XGBoost, LightGBM, CatBoost.  
+      Passionate about building AI-powered solutions that create real-world impact.
     </p>
   </section>
 
   <!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <div>
-      <h3>Technical Skills</h3>
-      <ul>
-        <li>Python</li>
-        <li>Django, FastAPI, Flask</li>
-        <li>scikit-learn, Pandas, NumPy</li>
-        <li>MLflow, Evidently, Deepchecks</li>
-        <li>LangChain, LangGraph, Streamlit</li>
-        <li>TensorFlow, PyTorch</li>
-        <li>Git & GitHub</li>
-      </ul>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Python, Django, FastAPI, Flask</li>
+          <li>scikit-learn, Pandas, NumPy</li>
+          <li>MLflow, Evidently, Deepchecks</li>
+          <li>LangChain, LangGraph, Streamlit</li>
+          <li>TensorFlow, PyTorch</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem-Solving</li>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Adaptability</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Problem-Solving</li>
-        <li>Communication</li>
-        <li>Teamwork</li>
-        <li>Adaptability</li>
-        <li>Time Management</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Projects Section -->
+  <!-- Projects Section (No Images, Only Cards) -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
         <h3>AI Chatbot</h3>
-        <p>Built with LangChain, LangGraph, Streamlit using Ollama’s LLaMA 3</p>
+        <p>LangChain, LangGraph, Streamlit using Ollama’s LLaMA 3</p>
         <a href="https://github.com/visheshsharma1708/chatbot-project-internship-final-project-" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card">
@@ -123,34 +123,71 @@
   </section>
 
   <!-- Experience Section -->
-<section id="experience">
-  <h2>Experience</h2>
-  
-  <div class="exp-card">
-    <h3>Machine Learning & AI Intern</h3>
-    <h4>HCL Infotech | 30 June – 14 Aug 2025 (45 days)</h4>
-    <p>
-      Worked on data preprocessing, feature selection (Filter & Wrapper), model training with Logistic Regression, Decision Tree, RandomForest, XGBoost, LightGBM, and CatBoost.
-      Implemented MLflow for experiment tracking, and used Evidently & Deepchecks for model validation.
-      Gained hands-on experience in end-to-end ML lifecycle and AI project deployment.
-    </p>
-  </div>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp-card">
+      <h3>Machine Learning & AI Intern</h3>
+      <h4>HCL Infotech | 30 June – 14 Aug 2025 (45 days)</h4>
+      <p>
+        Worked on data preprocessing, feature selection (Filter & Wrapper), model training (Logistic Regression, Decision Tree, RandomForest, XGBoost, LightGBM, CatBoost).  
+        Implemented MLflow for experiment tracking, and used Evidently & Deepchecks for model validation.  
+        Hands-on experience in end-to-end ML lifecycle and AI project deployment.
+      </p>
+    </div>
+    <div class="exp-card">
+      <h3>Python Backend Developer Intern</h3>
+      <h4>Procreative Institute | July 2024 – Aug 2024 (1 Month)</h4>
+      <p>
+        Developed backend APIs using Python Django framework.  
+        Worked on REST API development, database integration, and server-side logic for web applications.  
+        Built scalable backend systems integrating AI/ML modules.
+      </p>
+    </div>
+  </section>
 
-  <div class="exp-card">
-    <h3>Python Backend Developer Intern</h3>
-    <h4>Procreative Institute | July 2024 – Aug 2024 (1 Month)</h4>
-    <p>
-      Developed backend APIs using Python Django framework.
-      Worked on REST API development, database integration, and server-side logic for web applications.
-      Gained experience in building scalable backend systems and integrating AI/ML modules with Django APIs.
-    </p>
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="vishesh sharma resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- Blogs Section -->
+<section id="blogs">
+  <h2>Blogs</h2>
+  <div class="blogs-grid">
+    <div class="blog-card">
+      <h3>AI in Healthcare</h3>
+      <p>Learn how AI is transforming healthcare and patient management.</p>
+      <a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/blog-promise-artificial-intelligence-holds-improving-health-care" target="_blank" class="btn">Read More</a>
+    </div>
+    <div class="blog-card">
+      <h3>Machine Learning Model Deployment</h3>
+      <p>Step-by-step guide to deploying machine learning models effectively.</p>
+      <a href="https://northflank.com/blog/how-to-deploy-machine-learning-models-step-by-step-guide-to-ml-model-deployment-in-production" target="_blank" class="btn">Read More</a>
+    </div>
+    <div class="blog-card">
+      <h3>Top AI Trends 2025</h3>
+      <p>Explore the most important AI trends that are shaping industries today.</p>
+      <a href="https://www.salesmate.io/blog/latest-ai-trends/" target="_blank" class="btn">Read More</a>
+    </div>
+    <div class="blog-card">
+      <h3>Natural Language Processing</h3>
+      <p>Deep dive into NLP and how AI understands human language.</p>
+      <a href="https://naturallanguageprocessing.com/blog/" target="_blank" class="btn">Read More</a>
+    </div>
   </div>
 </section>
 
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
     <p>Email: <a href="mailto:svishesh1708@gmail.com">svishesh1708@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/vishesh-sharma-ai/" target="_blank">Vishesh Sharma</a></p>
   </section>

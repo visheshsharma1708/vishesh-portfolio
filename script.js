@@ -44,14 +44,14 @@ ScrollReveal().reveal('section h2', {
   distance: '40px'
 });
 
-ScrollReveal().reveal('.skills-container div, .project-card, .exp-card', {
+ScrollReveal().reveal('.skills-container div, .project-card, .exp-card, .blog-card, #resume .btn', {
   duration: 1200,
   origin: 'bottom',
   distance: '50px',
   interval: 200
 });
 
-ScrollReveal().reveal('#about p, #contact p', {
+ScrollReveal().reveal('#about p, #contact p, #contact form', {
   duration: 1200,
   origin: 'left',
   distance: '60px'
@@ -97,4 +97,23 @@ const heroAnimation = lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json' // example AI animation
+});
+
+/* ===== Dark/Light Mode Toggle ===== */
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  if(document.body.classList.contains('light-mode')) {
+    themeToggle.textContent = "🌞";
+  } else {
+    themeToggle.textContent = "🌙";
+  }
+});
+
+/* ===== Contact Form Submission ===== */
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert("Thanks for reaching out! I will get back to you soon.");
+  contactForm.reset();
 });
